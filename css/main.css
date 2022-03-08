@@ -3,6 +3,7 @@
   --f-stack: 'Heebo', sans-serif;
   --clr-primary: hsl(234, 30%, 18%);
   --clr-secondary: hsl(194, 57%, 95%);
+  --clr-highlight: hsl(0, 100%, 70%);
   --clr-neutral-200: hsl(220, 60%, 20%);
   --clr-neutral-700: hsl(210, 14%, 58%);
   --clr-neutral-900: hsl(0, 0%, 88%);
@@ -38,5 +39,32 @@ body {
   background-color: white;
   color: var(--clr-primary);
   font-family: var(--f-stack);
+}
+
+.navbar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 1.75rem;
+}
+
+.navbar .navlist {
+  margin-left: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.navbar .navlist .nav-item {
+  font-size: 1.25rem;
+  font-weight: 500;
+  padding: 0 2rem;
+}
+
+.navbar .navlist .nav-item .active {
+  color: var(--clr-highlight);
 }
 /*# sourceMappingURL=main.css.map */

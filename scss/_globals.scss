@@ -3,3 +3,24 @@ body {
 	color: var(--clr-primary);
 	font-family: var(--f-stack);
 }
+
+.navbar {
+	display: flex;
+	padding: 1.75rem;
+
+	.navlist {
+		margin-left: auto;
+		display: flex;
+		align-items: center;
+
+		.nav-item {
+			font-size: 1.25rem;
+			font-weight: 500;
+			padding: 0 2rem;
+
+			.active {
+				color: var(--clr-highlight);
+			}
+		}
+	}
+}
