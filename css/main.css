@@ -1,17 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Heebo:wght@400;500;700;900&display=swap");
 :root {
-  --f-stack: 'Heebo', sans-serif;
+  --f-stack: "Heebo", sans-serif;
   --clr-primary: hsl(234, 30%, 18%);
   --clr-secondary: hsl(194, 57%, 95%);
   --clr-highlight: hsl(0, 100%, 70%);
-  --clr-neutral-200: hsl(220, 60%, 20%);
+  --clr-neutral-200: hsl(220, 61%, 20%);
   --clr-neutral-700: hsl(210, 14%, 58%);
   --clr-neutral-900: hsl(0, 0%, 88%);
+  --clr-neutral-1000: hsl(0, 0%, 100%);
   --fs-h1: 2.75rem;
   --fs-h2: 1.375rem;
   --fs-h3: 1.625rem;
 }
-
 @media (max-width: 50rem) {
   :root {
     --fs-h1: 2rem;
@@ -22,8 +22,7 @@
 * {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 a {
@@ -35,6 +34,17 @@ ul {
   list-style: none;
 }
 
+img {
+  max-width: 100%;
+  display: inline-block;
+}
+
+.container {
+  max-width: 90rem;
+  padding-inline: 1.125rem;
+  margin: 0 auto;
+}
+
 body {
   background-color: white;
   color: var(--clr-primary);
@@ -42,29 +52,47 @@ body {
 }
 
 .navbar {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   padding: 1.75rem;
 }
-
 .navbar .navlist {
   margin-left: auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
-
 .navbar .navlist .nav-item {
   font-size: 1.25rem;
   font-weight: 500;
   padding: 0 2rem;
 }
-
 .navbar .navlist .nav-item .active {
   color: var(--clr-highlight);
 }
-/*# sourceMappingURL=main.css.map */
+
+.hero-grid {
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+  align-items: start;
+  justify-items: center;
+  grid-gap: 2.125rem;
+  margin-block: 4.5rem;
+}
+.hero .intro .title {
+  font-size: var(--fs-h1);
+}
+.hero .intro .lead {
+  margin-block: 2rem;
+  line-height: 1.46875;
+}
+.hero .intro .dl-btn {
+  display: inline-block;
+  font-size: 1.25rem;
+  background: var(--clr-highlight);
+  color: var(--clr-neutral-1000);
+  padding-inline: 1.25rem;
+  padding-block: 1rem;
+  border-radius: 0.125rem;
+}
+.hero .profile-img {
+  filter: drop-shadow(0 0.8125rem 0 var(--clr-secondary));
+}/*# sourceMappingURL=main.css.map */
