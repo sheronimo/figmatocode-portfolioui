@@ -86,7 +86,7 @@ body {
 }
 .hero .intro .lead {
   margin-block: 2rem;
-  line-height: 1.46875;
+  line-height: 1.46875rem;
 }
 .hero .intro .dl-btn {
   display: inline-block;
@@ -141,6 +141,43 @@ body {
 .recents .recent-posts .recent-post .post-info .separator {
   font-size: 1.3125rem;
 }
-.recents .recent-posts .recent-post .post-text {
+.recents .recent-posts .recent-post .post-desc {
   margin-top: 1.5rem;
+  line-height: 1.46875rem;
+}
+
+.featured {
+  padding-block: 2.25rem;
+}
+.featured-post {
+  display: flex;
+  gap: 1.125rem;
+  align-items: flex-start;
+  padding-block: 2rem;
+  border-bottom: 1px solid var(--clr-neutral-900);
+}
+.featured-post .post-title {
+  font-weight: 700;
+  font-size: 1.875rem;
+}
+.featured-post .post-info {
+  margin-block: 1.25rem;
+  display: flex;
+  align-items: center;
+  gap: 1.625rem;
+}
+.featured-post .post-info .year {
+  font-weight: 900;
+  font-size: 1.125rem;
+  background-color: var(--clr-neutral-200);
+  color: var(--clr-neutral-1000);
+  border-radius: 1rem;
+  padding: 0.3125rem 0.6875rem;
+}
+.featured-post .post-info .category {
+  font-size: 1.25rem;
+  color: var(--clr-neutral-700);
+}
+.featured-post .post-info .post-desc {
+  line-height: 1.46875rem;
 }/*# sourceMappingURL=main.css.map */
