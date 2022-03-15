@@ -53,6 +53,11 @@ img {
   margin: 0 auto;
 }
 
+.page-title {
+  font-size: var(--fs-h1);
+  font-weight: 700;
+}
+
 .section-title {
   font-weight: 400;
   font-size: var(--fs-h2);
@@ -108,9 +113,6 @@ body {
   grid-template-columns: 3fr 2fr;
   align-items: start;
   grid-gap: 2.125rem;
-}
-.hero .intro .title {
-  font-size: var(--fs-h1);
 }
 .hero .intro .lead {
   margin-block: 2rem;
