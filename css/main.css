@@ -240,4 +240,11 @@ body {
 }
 .blog-post .post-info-separated .categories {
   color: var(--clr-neutral-700);
+}
+
+.works {
+  margin-bottom: 3.625rem;
+}
+.works .work-post {
+  padding-block: 2.875rem;
 }/*# sourceMappingURL=main.css.map */
