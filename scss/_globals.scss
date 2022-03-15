@@ -24,3 +24,24 @@ body {
 		}
 	}
 }
+
+.footer {
+	margin-top: 2.875rem;
+	padding-block: 3.25rem;
+
+	.sns {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		gap: 2.1875rem;
+
+		&-icon {
+			font-size: 1.875rem;
+		}
+	}
+
+	.copyright {
+		font-size: 0.875rem;
+		margin-top: 1.5rem;
+	}
+}

@@ -1,11 +1,12 @@
 // Hero
 .hero {
+	margin-block: 4.5rem;
+
 	&-grid {
 		display: grid;
 		grid-template-columns: 3fr 2fr;
 		align-items: start;
 		grid-gap: 2.125rem;
-		margin-block: 4.5rem;
 	}
 
 	// Intro text section
@@ -16,7 +17,6 @@
 
 		.lead {
 			margin-block: 2rem;
-			line-height: 1.46875rem;
 		}
 
 		.dl-btn {
@@ -27,6 +27,11 @@
 			padding-inline: 1.25rem;
 			padding-block: 1rem;
 			border-radius: 0.125rem;
+			transition: background 0.3s ease;
+
+			&:hover {
+				background: var(--clr-primary);
+			}
 		}
 	}
 
@@ -85,7 +90,6 @@
 
 			.post-desc {
 				margin-top: 1.5rem;
-				line-height: 1.46875rem;
 			}
 		}
 	}
@@ -94,8 +98,6 @@
 // Featured works
 .featured {
 	padding-block: 2.25rem;
-	// set to footer margin-top
-	// margin-bottom: 2.875rem;
 
 	&-post {
 		display: flex;
@@ -127,10 +129,6 @@
 			.category {
 				font-size: 1.25rem;
 				color: var(--clr-neutral-700);
-			}
-
-			.post-desc {
-				line-height: 1.46875rem;
 			}
 		}
 	}

@@ -39,6 +39,14 @@ img {
   display: inline-block;
 }
 
+.text-center {
+  text-align: center;
+}
+
+.lh-post {
+  line-height: 1.46875rem;
+}
+
 .container {
   max-width: 70rem;
   padding-inline: 1.125rem;
@@ -74,19 +82,38 @@ body {
   color: var(--clr-highlight);
 }
 
+.footer {
+  margin-top: 2.875rem;
+  padding-block: 3.25rem;
+}
+.footer .sns {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2.1875rem;
+}
+.footer .sns-icon {
+  font-size: 1.875rem;
+}
+.footer .copyright {
+  font-size: 0.875rem;
+  margin-top: 1.5rem;
+}
+
+.hero {
+  margin-block: 4.5rem;
+}
 .hero-grid {
   display: grid;
   grid-template-columns: 3fr 2fr;
   align-items: start;
   grid-gap: 2.125rem;
-  margin-block: 4.5rem;
 }
 .hero .intro .title {
   font-size: var(--fs-h1);
 }
 .hero .intro .lead {
   margin-block: 2rem;
-  line-height: 1.46875rem;
 }
 .hero .intro .dl-btn {
   display: inline-block;
@@ -96,6 +123,10 @@ body {
   padding-inline: 1.25rem;
   padding-block: 1rem;
   border-radius: 0.125rem;
+  transition: background 0.3s ease;
+}
+.hero .intro .dl-btn:hover {
+  background: var(--clr-primary);
 }
 .hero .profile-img {
   justify-self: end;
@@ -143,7 +174,6 @@ body {
 }
 .recents .recent-posts .recent-post .post-desc {
   margin-top: 1.5rem;
-  line-height: 1.46875rem;
 }
 
 .featured {
@@ -177,7 +207,4 @@ body {
 .featured-post .post-info .category {
   font-size: 1.25rem;
   color: var(--clr-neutral-700);
-}
-.featured-post .post-info .post-desc {
-  line-height: 1.46875rem;
 }/*# sourceMappingURL=main.css.map */
