@@ -10,16 +10,10 @@
 			font-weight: 500;
 		}
 
-		.post-info {
+		.post-info-separated {
 			font-size: 1.25rem;
 			padding-block: 1rem;
-			display: flex;
-			align-items: center;
 			gap: 1.25rem;
-
-			.separator {
-				font-size: 1.3125rem;
-			}
 
 			.categories {
 				color: var(--clr-neutral-700);
