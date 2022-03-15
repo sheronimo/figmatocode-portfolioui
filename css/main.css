@@ -105,8 +105,13 @@ body {
   margin-top: 1.5rem;
 }
 
+.page-header {
+  margin-top: 5.625rem;
+}
+
 .hero {
-  margin-block: 4.5rem;
+  margin-top: 7.75rem;
+  margin-bottom: 4.5rem;
 }
 .hero-grid {
   display: grid;
@@ -208,5 +213,30 @@ body {
 }
 .featured-post .post-info .category {
   font-size: 1.25rem;
+  color: var(--clr-neutral-700);
+}
+
+.blog {
+  margin-bottom: 3.25rem;
+}
+.blog-post {
+  padding-block: 2rem;
+  border-bottom: 1px solid var(--clr-neutral-900);
+}
+.blog-post .post-title {
+  font-size: 1.875rem;
+  font-weight: 500;
+}
+.blog-post .post-info {
+  font-size: 1.25rem;
+  padding-block: 1rem;
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+}
+.blog-post .post-info .separator {
+  font-size: 1.3125rem;
+}
+.blog-post .post-info .categories {
   color: var(--clr-neutral-700);
 }/*# sourceMappingURL=main.css.map */

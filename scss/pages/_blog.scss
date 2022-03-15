@@ -1,0 +1,29 @@
+.blog {
+	margin-bottom: 3.25rem;
+
+	&-post {
+		padding-block: 2rem;
+		border-bottom: 1px solid var(--clr-neutral-900);
+
+		.post-title {
+			font-size: 1.875rem;
+			font-weight: 500;
+		}
+
+		.post-info {
+			font-size: 1.25rem;
+			padding-block: 1rem;
+			display: flex;
+			align-items: center;
+			gap: 1.25rem;
+
+			.separator {
+				font-size: 1.3125rem;
+			}
+
+			.categories {
+				color: var(--clr-neutral-700);
+			}
+		}
+	}
+}
