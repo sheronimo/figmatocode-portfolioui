@@ -36,7 +36,7 @@ ul {
 
 img {
   max-width: 100%;
-  display: inline-block;
+  display: block;
 }
 
 .text-center {
@@ -81,13 +81,14 @@ img {
   font-weight: 700;
   font-size: 1.875rem;
 }
-.work-post .work-post-info {
+
+.work-post-info {
   display: flex;
   align-items: center;
   gap: 1.625rem;
   margin-block: 1.25rem;
 }
-.work-post .work-post-info .year {
+.work-post-info .year {
   font-weight: 900;
   font-size: 1.125rem;
   background-color: var(--clr-neutral-200);
@@ -95,7 +96,7 @@ img {
   border-radius: 1rem;
   padding: 0.3125rem 0.6875rem;
 }
-.work-post .work-post-info .category {
+.work-post-info .category {
   font-size: 1.25rem;
   color: var(--clr-neutral-700);
 }
@@ -247,4 +248,35 @@ body {
 }
 .works .work-post {
   padding-block: 2.875rem;
+}
+
+.work-detail .article-title {
+  font-size: 2.125rem;
+}
+.work-detail .work-post-info {
+  gap: 1rem;
+  margin-block: 2rem;
+}
+.work-detail .work-post-info .year {
+  background-color: var(--clr-highlight);
+}
+.work-detail .work-post-info .category {
+  color: var(--clr-primary);
+}
+.work-detail img {
+  width: 100%;
+  margin-block: 1.6875rem;
+}
+.work-detail .article-h1 {
+  font-weight: 500;
+  font-size: 1.875rem;
+  margin-bottom: 1rem;
+}
+.work-detail .article-h2 {
+  font-weight: 500;
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+}
+.work-detail .more {
+  padding-block: 1.6875rem;
 }/*# sourceMappingURL=main.css.map */

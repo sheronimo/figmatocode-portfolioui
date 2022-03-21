@@ -1,0 +1,39 @@
+.work-detail {
+	.article-title {
+		font-size: 2.125rem;
+	}
+
+	.work-post-info {
+		gap: 1rem;
+		margin-block: 2rem;
+
+		.year {
+			background-color: var(--clr-highlight);
+		}
+
+		.category {
+			color: var(--clr-primary);
+		}
+	}
+
+	img {
+		width: 100%;
+		margin-block: 1.6875rem;
+	}
+
+	.article-h1 {
+		font-weight: 500;
+		font-size: 1.875rem;
+		margin-bottom: 1rem;
+	}
+
+	.article-h2 {
+		font-weight: 500;
+		font-size: 1.5rem;
+		margin-bottom: 1.5rem;
+	}
+
+	.more {
+		padding-block: 1.6875rem;
+	}
+}
