@@ -8,9 +8,60 @@ body {
 	display: flex;
 	padding: 1.75rem;
 
-	.navlist {
+	.menu-wrapper {
 		margin-left: auto;
+	}
+
+	// Checkbox is always invisible
+	.toggle {
+		position: absolute;
+		top: 1rem;
+		right: 1rem;
+		width: 1.875rem;
+		height: 1.875rem;
+		opacity: 0;
+		z-index: 999;
+		cursor: pointer;
+	}
+
+	.menu-btn-container {
+		cursor: pointer;
+		position: absolute;
+		top: 1rem;
+		right: 1rem;
+		width: 1.875rem;
+		height: 1.875rem;
+		display: none;
+		flex-direction: column;
+		align-items: center;
+		justify-content: center;
+	}
+
+	.menu-btn {
+		&,
+		&::before,
+		&::after {
+			display: block;
+			background-color: var(--clr-primary);
+			position: absolute;
+			height: 0.125rem;
+			width: 100%;
+		}
+
+		&::before {
+			content: '';
+			margin-top: -0.5rem;
+		}
+
+		&::after {
+			content: '';
+			margin-top: 0.5rem;
+		}
+	}
+
+	.navlist {
 		display: flex;
+		flex-direction: row;
 		align-items: center;
 
 		.nav-item {

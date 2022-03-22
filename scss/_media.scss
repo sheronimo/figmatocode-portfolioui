@@ -1,0 +1,33 @@
+@media (max-width: 37.5rem) {
+	// Navbar
+	.navbar {
+		padding: 1.125rem;
+
+		.menu-btn-container {
+			display: flex;
+		}
+
+		.navlist {
+			flex-direction: column;
+			align-items: flex-end;
+			width: 100%;
+			padding-block: 2rem;
+			position: fixed;
+			top: 0;
+			right: 0;
+			z-index: 999;
+			margin-top: 3rem;
+			background: hsla(0, 100%, 100%, 0.8);
+			transform: translateX(150%);
+			transition: transform 0.5s ease;
+
+			.nav-item {
+				padding-block: 1rem;
+			}
+		}
+
+		.toggle:checked ~ .navlist {
+			transform: translateX(0);
+		}
+	}
+}

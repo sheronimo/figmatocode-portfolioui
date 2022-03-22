@@ -34,6 +34,7 @@
 
 	// Profile pic
 	.profile-img {
+		flex: 0;
 		justify-self: end;
 		filter: drop-shadow(0 0.8125rem 0 var(--clr-secondary));
 	}
