@@ -1,4 +1,39 @@
 @media (max-width: 37.5rem) {
+	// Utilities
+	.section-title {
+		text-align: center;
+	}
+
+	.work-post {
+		flex-direction: column;
+		gap: 1.125rem;
+		align-items: flex-start;
+
+		.work-post-title {
+			font-size: 1.5rem;
+		}
+	}
+
+	.work-post-info {
+		gap: 1.375rem;
+		margin-block: 1rem;
+
+		.year {
+			font-size: 1rem;
+		}
+
+		.category {
+			font-size: 1rem;
+		}
+	}
+
+	.post-img {
+		width: 100%;
+		border: 1px solid hsl(0, 100%, 0%);
+		border-radius: 0.5rem;
+		filter: drop-shadow(0px 4px 4px hsla(0, 0%, 0%, 0.25));
+	}
+
 	// Navbar
 	.navbar {
 		padding: 1.125rem;
@@ -28,6 +63,81 @@
 
 		.toggle:checked ~ .navlist {
 			transform: translateX(0);
+		}
+	}
+
+	// Hero
+	.hero {
+		margin-top: 2rem;
+		margin-bottom: 3.75rem;
+
+		&-grid {
+			grid-template-columns: 1fr;
+			align-items: center;
+			justify-content: center;
+		}
+
+		// Intro text section
+		.intro {
+			order: 2;
+			text-align: center;
+			padding-inline: 0.375rem;
+		}
+
+		// Profile pic
+		.profile-img {
+			order: 1;
+			justify-self: center;
+		}
+	}
+
+	// Recents
+	.recents {
+		background-color: var(--clr-secondary);
+		padding-block: 2rem;
+
+		&-head {
+			justify-content: center;
+
+			.more-link {
+				display: none;
+			}
+		}
+
+		.recent-posts {
+			flex-direction: column;
+
+			.recent-post {
+				padding: 1rem;
+
+				.post-title {
+					font-size: 1.375rem;
+					line-height: 1.875rem;
+				}
+
+				.post-info-separated {
+					font-size: 1rem;
+					gap: 1rem;
+					margin-top: 1.3125rem;
+				}
+
+				.post-desc {
+					margin-top: 1.3125rem;
+				}
+			}
+		}
+	}
+
+	// Featured
+	.featured {
+		padding-block: 1.625rem;
+
+		.work-post {
+			padding-block: 1.3125rem;
+
+			&:not(:first-of-type) {
+				display: none;
+			}
 		}
 	}
 }
