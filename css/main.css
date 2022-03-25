@@ -82,6 +82,10 @@ img {
   font-size: 1.875rem;
 }
 
+.post-img {
+  max-width: 15.375rem;
+}
+
 .work-post-info {
   display: flex;
   align-items: center;
@@ -349,9 +353,14 @@ body {
 
   .post-img {
     width: 100%;
+    max-width: 100%;
     border: 1px solid black;
     border-radius: 0.5rem;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  }
+
+  .page-header {
+    margin-top: 3.5rem;
   }
 
   .navbar {
@@ -437,5 +446,19 @@ body {
   }
   .featured .work-post:not(:first-of-type) {
     display: none;
+  }
+
+  .works {
+    margin-bottom: 0;
+  }
+  .works .work-post {
+    display: none;
+    padding-block: 1.5rem;
+  }
+  .works .work-post:first-of-type, .works .work-post:last-of-type {
+    display: flex;
+  }
+  .works .work-post .work-post-title {
+    font-size: 1.875rem;
   }
 }/*# sourceMappingURL=main.css.map */
