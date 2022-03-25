@@ -461,4 +461,18 @@ body {
   .works .work-post .work-post-title {
     font-size: 1.875rem;
   }
+
+  .blog {
+    margin-bottom: 0;
+  }
+  .blog-post {
+    padding-block: 1.125rem;
+  }
+  .blog-post .post-title {
+    font-size: 1.625rem;
+  }
+  .blog-post .post-info-separated {
+    font-size: 1rem;
+    gap: 0.875rem;
+  }
 }/*# sourceMappingURL=main.css.map */

@@ -164,4 +164,22 @@
 			}
 		}
 	}
+
+	// Blog Page
+	.blog {
+		margin-bottom: 0;
+
+		&-post {
+			padding-block: 1.125rem;
+
+			.post-title {
+				font-size: 1.625rem;
+			}
+
+			.post-info-separated {
+				font-size: 1rem;
+				gap: 0.875rem;
+			}
+		}
+	}
 }
