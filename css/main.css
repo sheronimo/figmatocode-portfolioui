@@ -475,4 +475,22 @@ body {
     font-size: 1rem;
     gap: 0.875rem;
   }
+
+  .work-detail .article-title {
+    font-size: 1.875rem;
+  }
+  .work-detail .work-post-info {
+    margin-block: 1.5rem;
+  }
+  .work-detail .article-h1 {
+    font-size: 1.625rem;
+    margin-bottom: 1rem;
+  }
+  .work-detail .article-h2 {
+    font-size: 1.25rem;
+    margin-bottom: 0;
+  }
+  .work-detail .more {
+    padding-block: 1rem;
+  }
 }/*# sourceMappingURL=main.css.map */

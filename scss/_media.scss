@@ -182,4 +182,29 @@
 			}
 		}
 	}
+
+	// Work Detail Page
+	.work-detail {
+		.article-title {
+			font-size: 1.875rem;
+		}
+
+		.work-post-info {
+			margin-block: 1.5rem;
+		}
+
+		.article-h1 {
+			font-size: 1.625rem;
+			margin-bottom: 1rem;
+		}
+
+		.article-h2 {
+			font-size: 1.25rem;
+			margin-bottom: 0;
+		}
+
+		.more {
+			padding-block: 1rem;
+		}
+	}
 }
